@@ -1,0 +1,14 @@
+{
+  "name": "automacao-aliexpress",
+  "version": "1.0.0",
+  "description": "Projeto de automação no AliExpress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Rafael Rabelo da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.11.0"
+  }
+}
