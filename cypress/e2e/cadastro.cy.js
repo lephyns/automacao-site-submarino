@@ -48,7 +48,7 @@ describe('Tela de cadastro Submarino', () => {
 
   it('Faz cadastro com sucesso', () => {
 
-    cy.fixture("example.json").then((dados) => {
+    cy.fixture("massa-de-dados.json").then((dados) => {
 
       cy.get('input[name="name"]')
       .type(dados.nomeCompleto)
@@ -93,7 +93,7 @@ describe('Tela de cadastro Submarino', () => {
 
   it('Verifica mensagem de erro no cadastro duplicado', () => {
       
-    cy.fixture("example.json").then((dadosDuplicado) => {
+    cy.fixture("massa-de-dados.json").then((dadosDuplicado) => {
 
       cy.get('input[name="name"]')
       .type(dadosDuplicado.nomeCompleto)
@@ -133,6 +133,5 @@ describe('Tela de cadastro Submarino', () => {
 
       cy.wait('@cadastroEfetuado')
     })
-
   })
 })
