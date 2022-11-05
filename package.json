@@ -1,7 +1,7 @@
 {
-  "name": "automacao-aliexpress",
+  "name": "automacao-site-submarino",
   "version": "1.0.0",
-  "description": "Projeto de automação no AliExpress",
+  "description": "Projeto de automaçao do site Submarino",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open"
