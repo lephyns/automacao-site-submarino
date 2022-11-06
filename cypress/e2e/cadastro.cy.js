@@ -125,13 +125,11 @@ describe('Tela de cadastro Submarino', () => {
       cy.get('span[class="sc-jvdzsS hXYyLP"]')
       .should('have.text', 'ótima')
 
-      cy.intercept('https://www.google.com/recaptcha/api2/reload?k=6Lecgi4UAAAAADoy8olZEoD8T5dqynjjJajXSQHj')
-      .as('cadastroEfetuado')
-
       cy.get('[data-cy="sign-submit"]')
       .click()
 
-      cy.wait('@cadastroEfetuado')
+      cy.contains('span', 'O email fornecido é inválido.')
+      .should('be.visible')
     })
   })
 })
